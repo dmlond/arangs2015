@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="http://gtpb.igc.gulbenkian.pt/bicourses/GTPB2015style.css">
+</link>
+
+<title>
+GTPB: ARANGS15 Automated and reproducible analysis of NGS data - Timetable
+</title>
+
+</head>
+
+<body>
+
+<!-- GTPB header -->
+
+<table width="910" align="center">
+<tr><td>
+<img src="../images/GTPB2015logo.png" width="890">
+</td></tr>
+</table>
+
+
+<table width="910" align="center">
+<tr><td>
+<font size="6" color="#006400">
+<p><b>ARANGS15</b></p></font>
+<p>
+<h1> Automated and reproducible analysis of NGS data </h1>
+</p>
+<font size="4" color="#006400">
+<b>Timetable (provisional) </b>
+</font>
+</td></tr>
+</table>
+
+
+<table width="910" align="center">
+
+<tr>
+<td width="130">
+<b>ARANGS15</b>
+</td>
+<td width="470">
+<b>Automated and reproducible analysis of NGS data</b>
+</td>
+</tr>
+
+<tr >
+<td style="background:#FFCC00">
+<b>Mon, May 11th</b>
+</td>
+<td style="background:#FFCC00">
+<div align="right">
+<b>Day #1</b>
+</div>
+</td>
+</tr>
+
+<!--Day One program -->
+
+<tr>
+<td>09:30 - 11:00</td>
+<td>
+Introduction, Installation
+<br> Introduce the course concepts, and the basic pipeline and data
+while students download the required software if they have not already done so.
+</td>
+</tr>
+
+<tr>
+<td>11:00 - 11:30</td>
+<td style="background:#DCDCDC">
+Coffee Break
+</td>
+</tr>
+
+<tr>
+<td>11:30 - 12:30</td>
+<td>
+Introduce the pipeline software requirements, and discuss its compute environment
+<br>Using the pipeline as a launching point, introduce the Linux operating system
+variants, and discuss their different package management systems.  Demonstrate the
+breadth of internet resources availble for students to find out how to install the
+packages they need.
+</td>
+</tr>
+
+<tr>
+<td>12:30 - 14:00</td>
+<td style="background:#DCDCDC">
+Lunch Break
+</td>
+</tr>
+
+<tr>
+<td>14:00 - 16:00</td>
+<td>
+First run of the pipeline
+<br>Students will attempt to use the documentation provided to get their local machines
+ready to run the pipeline.  We will discuss pain points along the way.  Instructors
+will run the pipeline to demonstrate that it works, and the output that is expected.
+</td>
+</tr>
+
+
+<tr>
+<td>16:00 - 16:30</td>
+<td style="background:#DCDCDC">
+Tea Break
+</td>
+</tr>
+Continue running the pipeline, note any different versions of software on different machines.
+<tr>
+<td>16:30 - 18:00</td>
+<td>
+
+</td>
+</tr>
+
+<!--   -->
+
+<tr >
+<td style="background:#FFCC00">
+<b>Tue, May 12th</b>
+</td>
+<td style="background:#FFCC00">
+<div align="right">
+<b>Day #2</b>
+</div>
+</td>
+</tr>
+
+<!--Day Two program -->
+
+<tr>
+<td>09:30 - 11:00</td>
+<td>
+Morning Wrap-up (what have we done so far?), Virtualization 101, Virtualbox
+<br>Review day 1, then dive into Virtualization with Virtualbox.
+</td>
+</tr>
+
+<tr>
+<td>11:00 - 11:30</td>
+<td style="background:#DCDCDC">
+Coffee Break
+</td>
+</tr>
+
+<tr>
+<td>11:30 - 12:30</td>
+<td>
+Adding Vagrant to your virtualization toolbox
+<br>Students will learn how to use vagrant to automate and manage their research
+pipeline projects.  They will learn about the Vagrantfile syntax, and the location
+of free base boxes from which they can start to build the machine environment for
+the pipeline.  They will also use package management applications to install the
+software needed to run the pipeline on their Virtual Machine.
+</td>
+</tr>
+
+<tr>
+<td>12:30 - 14:00</td>
+<td style="background:#DCDCDC">
+Lunch Break
+</td>
+</tr>
+
+<tr>
+<td>14:00 - 16:00</td>
+<td>
+Adding Puppet to your virtualization toolbox
+<br>Students will learn about configuration management, and start to use Puppet
+to automate the process of provisioning their pipeline virtual machine.
+</td>
+</tr>
+
+
+<tr>
+<td>16:00 - 16:30</td>
+<td style="background:#DCDCDC">
+Tea Break
+</td>
+</tr>
+
+<tr>
+<td>16:30 - 18:00</td>
+<td>
+Run the pipeline inside a virtual machine image provisioned with puppet
+<br>Students will finish provisioning their pipeline virtual machine with
+puppet, and run the pipeline inside the virtual machine.
+</td>
+</tr>
+
+
+<!--    -->
+<tr >
+<td style="background:#FFCC00">
+<b>Wed, May 13th</b>
+</td>
+<td style="background:#FFCC00">
+<div align="right">
+<b>Day #3</b>
+</div>
+</td>
+</tr>
+
+<!--Day Three program -->
+<tr>
+<td>09:30 - 11:00</td>
+<td>
+Morning Wrap-up (what have we done so far?), Vagrant boxes
+<br>Students will learn how Vagrant can be used to store and share the exact machine image that
+they created, with specific versions of the software required to run their pipeline, and
+a standard directory structure.
+</td>
+</tr>
+
+<tr>
+<td>11:00 - 11:30</td>
+<td style="background:#DCDCDC">
+Coffee Break
+</td>
+</tr>
+
+<tr>
+<td>11:30 - 12:30</td>
+Host machine directory mounts
+<br>Students will learn how to mount local directories onto their Virtual Machine.
+They will learn about how data from different projects can be plugged into their
+virtual machine in place of the directory structure it expects.
+<td>
+</td>
+</tr>
+
+<tr>
+<td>12:30 - 14:00</td>
+<td style="background:#DCDCDC">
+Lunch Break
+</td>
+</tr>
+
+<tr>
+<td>14:00 - 16:00</td>
+<td>
+Introduce Docker
+<br>Students will learn how Docker builds off virtualization with a different approach.
+They will learn about the docker toolset: docker, docker-machine, and docker-compose.
+The session will end with a discussion of docker concepts:
+<ul>
+  <li>Container Applications compared to Virtual Machine Images</li>
+  <li>Volume Containers to permenantly store and share data</li>
+  <li>Volumes to plug different host directories into the directory
+  structure expected by a container application</li>
+</td>
+</tr>
+
+
+<tr>
+<td>16:00 - 16:30</td>
+<td style="background:#DCDCDC">
+Tea Break
+</td>
+</tr>
+
+<tr>
+<td>16:30 - 18:00</td>
+<td>
+Docker Machine, and Docker Commandline
+<br>Students will learn how virtualization is leveraged to produce a standard
+machine environment on any host machine within which docker images can be stored
+and docker containers can be run.  Students will create their docker machine,
+and learn how to configure the Docker commandline application to work with it.
+Students will also learn how the Docker commandline's preconfigured knowledge
+of the global docker hub registry can speed up their use of docker to design their
+environments.
+</td>
+</tr>
+
+<!--Day Four program -->
+<tr>
+<td>09:30 - 11:00</td>
+<td>
+Morning Wrap-up (what have we done so far?) Dockerfile and the Docker build context
+<br>Students will learn how to create a Docker build context to automate and document
+the way they build their machine environment.
+</td>
+</tr>
+
+<tr>
+<td>11:00 - 11:30</td>
+<td style="background:#DCDCDC">
+Coffee Break
+</td>
+</tr>
+
+<tr>
+<td>11:30 - 12:30</td>
+<td>
+Docker Compose
+<br>Students will learn how to use docker-compose to automate the
+way they build and launch their pipeline components. They will use
+docker-compose as they continue creating the pipeline image build contexts.
+</td>
+</tr>
+
+<tr>
+<td>12:30 - 14:00</td>
+<td style="background:#DCDCDC">
+Lunch Break
+</td>
+</tr>
+
+<br>
+<tr>
+<td>14:00 - 16:00</td>
+<td>
+Run the pipeline
+<br>Students will run their pipeline using docker-compose. They will learn about
+how docker-compose can automate volume mounts to host locally stored data, and how
+its logging system can help them debug their applications.
+</td>
+</tr>
+
+
+<tr>
+<td>16:00 - 16:30</td>
+<td style="background:#DCDCDC">
+Tea Break
+</td>
+</tr>
+
+<tr>
+<td>16:30 - 18:00</td>
+<td>
+Share the pipeline
+<br>Students will learn how to use Docker to store their pipeline machine images,
+and share them with each other to reuse.
+</td>
+</tr>
+
+<!--Day Five program -->
+<tr>
+<td>09:30 - 11:00</td>
+<td>
+Morning Wrap-up (what have we done so far?) Sharing your pipeline machine environments with the world
+<br>Students will begin learn how to use Vagrant to share their machine images with the rest of the world.
+</td>
+</tr>
+
+<tr>
+<td>11:00 - 11:30</td>
+<td style="background:#DCDCDC">
+Coffee Break
+</td>
+</tr>
+
+<tr>
+<td>11:30 - 12:30</td>
+<td>
+Sharing your code and Vagrantfile
+<br>Students will get a brief introduction into how they can use github to share the code
+and Vagrantfile to build their machine image with the world.
+</td>
+</tr>
+
+<tr>
+<td>12:30 - 14:00</td>
+<td style="background:#DCDCDC">
+Lunch Break
+</td>
+</tr>
+
+<tr>
+<td>14:00 - 16:00</td>
+<td>
+Sharing your docker images, code, and build contexts with the world
+<br>Students will learn how they can use the worldwide docker hub registry to share
+their docker images with the world. They will learn how to store their
+code with the Docker build contexts needed to build the images needed to run the
+code in github.
+</td>
+</tr>
+
+
+<tr>
+<td>16:00 - 16:30</td>
+<td style="background:#DCDCDC">
+Tea Break
+</td>
+</tr>
+
+<tr>
+<td>16:30 - 18:00</td>
+<td>
+<br>Final Wrap-up session
+</td>
+</tr>
+
+</table>
+
+
+
+<table width="910" align="center" >
+<tr><td>
+<a href="./index.html">Course Homepage</a>
+</td></tr>
+</table>
+
+
+
+<table width="910" align="center" ">
+<tr><td>
+<p>
+Instituto Gulbenkian de Ci&ecirc;ncia,</p>
+<p>
+Apartado 14, 2781-901 Oeiras, Portugal</p>
+<p><a href="http://gtpb.igc.gulbenkian.pt/bicourses">GTPB Homepage</a></p>
+<p><a href="http://www.igc.gulbenkian.pt">IGC Homepage</a></p>
+<p>Last updated: &nbsp;&nbsp;<i><b>Mar 2nd 2015</b></i></p>
+</td></tr>
+</table>
+</body>
+
+</html>
