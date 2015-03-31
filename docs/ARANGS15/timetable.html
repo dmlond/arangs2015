@@ -64,6 +64,7 @@
 				</td>
 			</tr>
 
+			<!-- TOPIC: automated analysis pipelines -->
 			<!--Day One program -->
 			<tr class="day">
 				<td>Mon, May 11th</td>
@@ -74,18 +75,10 @@
 				<td>09:30 - 11:00</td>
 				<td>
 					Introduction, Installation
-					<br>Introduce the course concepts, and the basic pipeline and 
-					data while students download the required software if they have 
-					not already done so.
-					<!--
-						- Brief round of introductions, including the students
-						- Clarifying and managing expectations
-						- Identifying learning goals
-						- Starting downloads (consider bandwidth):
-							- Git code
-							- Example data
-							- Required executables
-					-->
+					<br>Introduce ourselves, the course concepts and discover each 
+					other's expectations for the coming week. Introduce the example 
+					pipeline(s) and data we will use <!-- such as? --> and download 
+					any required software if you haven't already done so.
 				</td>
 			</tr>
 
@@ -97,12 +90,12 @@
 			<tr>
 				<td>11:30 - 12:30</td>
 				<td>
-					Introduce the pipeline software requirements, and discuss its 
-					compute environment <br>Using the pipeline as a launching point, 
-					introduce the Linux operating system variants, and discuss their 
-					different package management systems. Demonstrate the breadth 
-					of internet resources availble for students to find out how to 
-					install the packages they need.
+					Introduce pipeline software requirements, and discuss 
+					compute environments <br>Using the pipeline(s) as a launching point, 
+					we look at Linux operating system variants, and discuss their 
+					different package management systems. We will explore the breadth 
+					of internet resources available to find out how to install the 
+					packages you need.
 					<!--
 						- Lecture-style session
 						- Demonstrations of command line usage
@@ -119,9 +112,9 @@
 				<td>14:00 - 16:00</td>
 				<td>
 					First run of the pipeline
-					<br>Students will attempt to use the documentation provided to 
-					get their local machines ready to run the pipeline.  We will 
-					discuss pain points along the way.  Instructors will run the 
+					<br>We will attempt to use the documentation provided to 
+					get the local machines ready to run the pipeline.  We will 
+					discuss pain points along the way. The instructors will run the 
 					pipeline to demonstrate that it works, and the output that is 
 					expected.
 					<!--
@@ -139,11 +132,12 @@
 			<tr>
 				<td>16:30 - 18:00</td>
 				<td>
-					Continue running the pipeline, note any different versions of 
-					software on different machines.
+					We will continue running the pipeline and note any different versions
+					of software, or other discrepancies, on different machines.
 				</td>
 			</tr>
 
+			<!-- TOPIC: provisioning -->
 			<!-- Day Two program -->
 			<tr class="day">
 				<td>Tue, May 12th</td>
@@ -168,12 +162,12 @@
 				<td>11:30 - 12:30</td>
 				<td>
 					Adding Vagrant to your virtualization toolbox
-					<br>Students will learn how to use vagrant to automate and manage 
-					their research pipeline projects.  They will learn about the 
+					<br>We will learn how to use vagrant to automate and manage 
+					research pipeline projects. We will learn about the 
 					Vagrantfile syntax, and the location of free base boxes from which 
-					they can start to build the machine environment for the pipeline.  
-					They will also use package management applications to install the
-					software needed to run the pipeline on their Virtual Machine.
+					we can start to build the machine environment for the pipeline.  
+					We will also use package management applications to install the
+					software needed to run the pipeline on Virtual Machines.
 				</td>
 			</tr>
 
@@ -186,8 +180,8 @@
 				<td>14:00 - 16:00</td>
 				<td>
 					Adding Puppet to your virtualization toolbox
-					<br>Students will learn about configuration management, and start 
-					to use Puppet to automate the process of provisioning their pipeline 
+					<br>We will learn about configuration management, and start 
+					to use Puppet to automate the process of provisioning the pipeline 
 					virtual machine.
 				</td>
 			</tr>
@@ -201,12 +195,12 @@
 				<td>16:30 - 18:00</td>
 				<td>
 					Run the pipeline inside a virtual machine provisioned with 
-					puppet <br>Students will finish provisioning their pipeline virtual 
+					puppet <br>We will finish provisioning the pipeline virtual 
 					machine with puppet, and run the pipeline inside the virtual machine.
 				</td>
 			</tr>
 
-
+			<!-- TOPIC: Virtual Machines and Containers -->
 			<!--Day Three program -->
 			<tr class="day">
 				<td>Wed, May 13th</td>
@@ -217,9 +211,9 @@
 				<td>09:30 - 11:00</td>
 				<td>
 					Morning Wrap-up (what have we done so far?), Vagrant boxes 
-					<br>Students will learn how Vagrant can be used to store and share 
-					the exact machine image that they created, with specific versions of 
-					the software required to run their pipeline, and a standard 
+					<br>We will learn how Vagrant can be used to store and share 
+					the exact machine image that we created, with specific versions of 
+					the software required to run the pipeline, and a standard 
 					directory structure.
 				</td>
 			</tr>
@@ -233,8 +227,8 @@
 				<td>11:30 - 12:30</td>
 				<td>				
 					Host machine directory mounts
-					<br>Students will learn how to mount local directories onto their 
-					Virtual Machine. They will learn about how data from different 
+					<br>We will learn how to mount local (data) directories onto the 
+					Virtual Machine. We will learn about how data from different 
 					projects can be plugged into their virtual machine in place of the 
 					directory structure it expects.
 					<!--
@@ -255,8 +249,8 @@
 				<td>14:00 - 16:00</td>
 				<td>
 					Introduce Docker
-					<br>Students will learn how Docker builds off virtualization with a 
-					different approach. They will learn about the docker toolset: docker, 
+					<br>We will learn how Docker builds on virtualization with a 
+					different approach. We will learn about the docker toolset: docker, 
 					docker-machine, and docker-compose. The session will end with a 
 					discussion of docker concepts:
 					<ul>
@@ -277,17 +271,17 @@
 				<td>16:30 - 18:00</td>
 				<td>
 					Docker Machine, and Docker Commandline
-					<br>Students will learn how virtualization is leveraged to produce 
+					<br>We will learn how virtualization is used to ensure 
 					a standard machine environment on any host machine within which docker 
-					images can be stored and docker containers can be run.  Students will 
-					create their docker machine, and learn how to configure the Docker 
-					commandline application to work with it. Students will also learn how 
+					images can be stored and docker containers can be run.  We will 
+					create our docker machine, and learn how to configure the Docker 
+					commandline application to work with it. We will also learn how 
 					the Docker commandline's preconfigured knowledge of the global docker 
-					hub registry can speed up their use of docker to design their
-					environments.
+					hub registry can speed up our use of docker to design environments.
 				</td>
 			</tr>
 
+			<!-- TOPIC: docker-compose -->
 			<!--Day Four program -->
 			<tr class="day">
 				<td>Thu, May 14th</td>
@@ -298,8 +292,8 @@
 				<td>09:30 - 11:00</td>
 				<td>
 					Morning Wrap-up (what have we done so far?) Dockerfile and the Docker 
-					build context <br>Students will learn how to create a Docker build 
-					context to automate and document the way they build their machine 
+					build context <br>We will learn how to create a Docker build 
+					context to automate and document the way we build the machine 
 					environment.
 				</td>
 			</tr>
@@ -313,9 +307,9 @@
 				<td>11:30 - 12:30</td>
 				<td>
 					Docker Compose
-					<br>Students will learn how to use docker-compose to automate the
-					way they build and launch their pipeline components. They will use
-					docker-compose as they continue creating the pipeline image build 
+					<br>We will learn how to use docker-compose to automate the
+					way we build and launch pipeline components. We will use
+					docker-compose as we continue creating the pipeline image build 
 					contexts.
 				</td>
 			</tr>
@@ -329,9 +323,9 @@
 				<td>14:00 - 16:00</td>
 				<td>
 					Run the pipeline
-					<br>Students will run their pipeline using docker-compose. They will 
+					<br>We will run our pipeline using docker-compose. We will 
 					learn about how docker-compose can automate volume mounts to host 
-					locally stored data, and how its logging system can help them debug 
+					locally stored data, and how its logging system can help debug 
 					their applications.
 				</td>
 			</tr>
@@ -345,12 +339,13 @@
 				<td>16:30 - 18:00</td>
 				<td>
 					Share the pipeline
-					<br>Students will learn how to use Docker to store their pipeline 
-					machine images, and share them with each other to reuse.
+					<br>We will learn how to use Docker to store pipeline 
+					machine images, and share them with each other for reuse.
 				</td>
 			</tr>
 
 			<!--Day Five program -->
+			<!-- TOPIC: SHARING -->
 			<tr class="day">
 				<td>Fri, May 15th</td>
 				<td>Day #5</td>
@@ -360,8 +355,8 @@
 				<td>09:30 - 11:00</td>
 				<td>
 					Morning Wrap-up (what have we done so far?) Sharing your pipeline 
-					machine environments with the world <br>Students will begin learn how 
-					to use Vagrant to share their machine images with the rest of the 
+					machine environments with the world <br>We will begin to learn how 
+					to use Vagrant to share machine images with the rest of the 
 					world.
 				</td>
 			</tr>
@@ -375,9 +370,9 @@
 				<td>11:30 - 12:30</td>
 				<td>
 					Sharing your code and Vagrantfile
-					<br>Students will get a brief introduction into how they can use 
-					github to share the code and Vagrantfile to build their machine image 
-					with the world.
+					<br>We will get a brief introduction into how we can use 
+					github to share the code and Vagrantfile to share a machine image 
+					configuration with the world.
 				</td>
 			</tr>
 
@@ -390,9 +385,9 @@
 				<td>14:00 - 16:00</td>
 				<td>
 					Sharing your docker images, code, and build contexts with the world
-					<br>Students will learn how they can use the worldwide docker hub 
-					registry to share their docker images with the world. They will learn 
-					how to store their code with the Docker build contexts needed to build 
+					<br>We will learn how we can use the worldwide docker hub 
+					registry to share docker images with the world. We will learn 
+					how to store code with the Docker build contexts needed to build 
 					the images needed to run the code in github.
 				</td>
 			</tr>
