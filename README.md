@@ -1,5 +1,7 @@
 # ARANGS 2015
-Automated and Reproducible Analysis of Next Generation Sequencing Source code, data, documentation and reference materials.
+
+Automated and Reproducible Analysis of Next Generation Sequencing Source code, data, 
+documentation and reference materials.
 
 ## Data
 
@@ -67,11 +69,11 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 
     `local> vagrant box add fedora http://puppet-vagrant-boxes.puppetlabs.com/fedora-18-x64-vbox4210.box`
 
-* bring up the arangs13 box: make sure you are connected to the internet
+* bring up the arangs15 box: make sure you are connected to the internet
 
     `local> vagrant up`
 
-* ssh to arangs13, list out the contents, check the version of bwa and samtools, then exit back to your box
+* ssh to arangs15, list out the contents, check the version of bwa and samtools, then exit back to your box
 
     `local> vagrant ssh`
 
@@ -87,21 +89,21 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 
 * Capture and use the vagrant ssh-config as a standard ssh configuration file (for use by ssh, and perl, python, ruby, etc. s\
 sh wrappers)
-    `local> vagrant ssh-config > arangs13.conf`
-    `local> ssh -F arangs13.conf arangs13`
+    `local> vagrant ssh-config > arangs15.conf`
+    `local> ssh -F arangs15.conf arangs15`
     `arangs13> exit`
 
-* check the status of the arangs13 box
+* check the status of the arangs15 box
 
     `local> vagrant status`
 
-*  suspend the arangs13 box (does not destroy the image, so puppet does not need to run again, and any files stored on the vi\
+*  suspend the arangs15 box (does not destroy the image, so puppet does not need to run again, and any files stored on the vi\
 rtual filesystem are preserved), then bring it back up
 
     `local> vagrant suspend`
     `local> vagrant up`
 
-* destroy the arangs13 box (all data on the virtual filesystem, including puppet configuration, are destroyed)
+* destroy the arangs15 box (all data on the virtual filesystem, including puppet configuration, are destroyed)
 
     `local> vagrant destroy --force`
 
