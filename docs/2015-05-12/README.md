@@ -83,11 +83,12 @@ the VM is to be provisioned using Puppet, specifically using the manifest that i
 relative to the Vagrantfile, in `manifests/default.pp`. Edit the manifest to add the extra
 instruction to clone your fork of the course repo into the home directory of the VM user
 `vagrant`. Launch the box using `vagrant up` and log into it with `vagrant ssh`.
-- _Session 4_: Running the pipeline. If all has gone well, we now have access to the 
-`arangs2015/data` on the host by navigating to `/vagrant_data/`. Verify that this is the
-case and that you can read from it (e.g. by accessing the README.md using `more`) as well 
-as write to it (e.g. `touch foo` should create an empty file `foo`). Modify the pipeline
-shell script to point it to the right folder and run it.
+- _Session 4_: Running the pipeline. If the course repo was successfully cloned into the 
+VM by puppet we should be able to navigate into it and run our pipeline. The puppet 
+manifest was run as root (`sudo puppet apply ...`) so our current user (which is, well,
+try `whoami` - Who am I?) cannot write to it. You can change ownership with 
+`sudo chown -R vagrant arangs2015`. Then download the data into the VM and run the 
+pipeline.
 
 Requirements
 ------------

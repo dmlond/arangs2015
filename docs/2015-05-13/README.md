@@ -27,15 +27,8 @@ machine running in the background so the efficiency gains aren't quite as great.
 
 We hope to accomplish the following learning goals today:
 
-Vagrant
--------
-
 - How Vagrant can be used to store and share machine images
 - How to mount local directories onto the Virtual Machine
-
-Docker
-------
-
 - How Docker builds off virtualization with a different approach
 - The docker toolset: `docker`, `docker-machine`, and `docker-compose`
 - Container Applications compared to Virtual Machine Images
@@ -44,6 +37,23 @@ Docker
 - The global docker hub registry
 - Volume Containers to permanently store and share data
 - How to plug host directories into the file system expected by a container application
+
+Schedule
+--------
+
+The outline for today is as follows:
+
+- _Session 1_: Recap from yesterday: How Vagrant and Puppet can automate the creation and
+configuration of compute environments and how to run analyses inside a VM. Brief
+aside on how to organize data, e.g. as produced by different runs of a pipeline or 
+different steps in a larger analysis.
+- _Session 2_: If all has gone well, we will be able to access the folder 
+`arangs2015/data` on the host by navigating to `/vagrant_data/` on the VM. Verify that 
+this is the case and that you can read from it (e.g. by accessing the README.md using 
+`more`) as well as write to it (e.g. `touch foo` should create an empty file `foo`). 
+Modify the pipeline shell script to point it to the right folder and run it.
+- _Session 3_: Docker introduction.
+- _Session 4_: Docker Machine, and Docker Commandline.
 
 Requirements
 ------------
