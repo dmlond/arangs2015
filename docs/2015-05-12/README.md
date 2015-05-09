@@ -1,5 +1,11 @@
-ARANGS15 - 2015-05-12 - Virtualization and provision with Virtualbox and puppet
-===============================================================================
+![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
+
+ARANGS15
+========
+Virtualization and provision with Virtualbox and puppet
+-------------------------------------------------------
+*2015-05-12*
+
 On the previous day we learned how to track changes in, and collaborate on, text files 
 using `git` and Github. We would now be able to share analysis scripts, configuration
 files, and (small) data files. However, simply pointing other researchers to our text

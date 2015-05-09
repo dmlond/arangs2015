@@ -1,5 +1,11 @@
-ARANGS15 - 2015-05-12 - Shareable virtual machines and containers: vagrant and docker
-=====================================================================================
+![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
+
+ARANGS15
+========
+Shareable virtual machines and containers: vagrant and docker
+-------------------------------------------------------------
+*2015-05-12*
+
 On the previous day we learnt how to interact with vagrant boxes, which contain an entire
 OS with all the dependencies that are needed for our analysis. Our pipeline has therefore
 become fully specified and reproducible. However, this approach is not particularly 
