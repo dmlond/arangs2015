@@ -47,8 +47,7 @@ accounts on Github.com and install `git` if needed.
 - _Session 2_: A simple pipeline. We will look at a pipeline in shell script that maps
 short reads against a reference genome. If we are comfortable with Linux shell commands
 we should be able to understand what the pipeline does. All fork and clone the course 
-repository and try to run the pipeline. Install the tools and data that the pipeline 
-requires as needed.
+repository and install the tools and data that the pipeline requires (as needed).
 - _Session 3_: First run of the pipeline. If all tools were installed correctly and the
 data are there we should be able to run the pipeline. If there are any bugs in the 
 pipeline whose fix the whole class benefits from, commit your corrections to your 
