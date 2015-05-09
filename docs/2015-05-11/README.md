@@ -22,9 +22,9 @@ accomplish the following learning goals:
 Github
 ------
 
-- open source licenses
-- class Github repositories
-- forking our repositories to make your own copy
+- The open source culture, and licensing
+- Class Github repositories
+- Forking our repositories to make your own copy
 - Using forks as a proxy for 'citations' of code
 - Following our repositories
 - Pulling changes from our repositories
@@ -33,7 +33,7 @@ Github
 Git
 ---
 
-- Clone
+- Cloning repositories
 - Local and remote repositories
 - .gitignore and secrets
 - The Git Workflow
