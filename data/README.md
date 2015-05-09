@@ -4,6 +4,12 @@ ARANGS15
 ========
 Data folder
 -----------
+When cloned locally, this folder will contain a set of short read (FASTQ)
+data files and a reference genome (FASTA). You will be able to fetch these
+data automatically using the scripts `download_plasmodium_raw.sh` and 
+`download_plasmodium_reference.sh` in the bin folder. Given this location,
+we will then be able to run analyses locally on the host OS as well as from
+VMs and containers.
 
 The short read (FASTQ) data for the course comes from the 
 [Genome Epidemiology Network](http://www.malariagen.net/data)
