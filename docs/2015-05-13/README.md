@@ -8,7 +8,7 @@ Shareable virtual machines and containers: vagrant and docker
 
 On the previous day we learnt how to interact with vagrant boxes, which contain an entire
 OS with all the dependencies that are needed for our analysis. Our pipeline has therefore
-become fully specified and reproducible. However, this approach is not particularly 
+become fully specified and reproducible. However, this approach is not particularly
 efficient with our compute resources, both in terms of storage - we have downloaded an
 entire OS, when actually a lot of its functionality already existed on our computer - and
 in terms of compute power and RAM memory: we are now running two entire operating systems
@@ -19,10 +19,10 @@ have yet and run those, while most of the system processes are delegated to the 
 Due to some enhancements in the architecture of Linux operating systems this is now more
 or less possible. With this approach we strictly speaking are no longer running entire
 virtual machines, but "containers". This functionality is provided by `docker`, which we
-will explore today. 
+will explore today.
 
-(On other operating systems, e.g. Mac OSX, docker containers can also be used, but because 
-these operating systems have a different architecture, there is still a small virtual 
+(On other operating systems, e.g. Mac OSX, docker containers can also be used, but because
+these operating systems have a different architecture, there is still a small virtual
 machine running in the background so the efficiency gains aren't quite as great.)
 
 We hope to accomplish the following learning goals today:
@@ -45,18 +45,34 @@ The outline for today is as follows:
 
 - _Session 1_: Recap from yesterday: How Vagrant and Puppet can automate the creation and
 configuration of compute environments and how to run analyses inside a VM. Brief
-aside on how to organize data, e.g. as produced by different runs of a pipeline or 
+aside on how to organize data, e.g. as produced by different runs of a pipeline or
 different steps in a larger analysis.
-- _Session 2_: If all has gone well, we will be able to access the folder 
-`arangs2015/data` on the host by navigating to `/vagrant_data/` on the VM. Verify that 
-this is the case and that you can read from it (e.g. by accessing the README.md using 
-`more`) as well as write to it (e.g. `touch foo` should create an empty file `foo`). 
+- _Session 2_: If all has gone well, we will be able to access the folder
+`arangs2015/data` on the host by navigating to `/vagrant_data/` on the VM. Verify that
+this is the case and that you can read from it (e.g. by accessing the README.md using
+`more`) as well as write to it (e.g. `touch foo` should create an empty file `foo`).
 Modify the pipeline shell script to point it to the right folder and run it.
-- _Session 3_: Docker introduction.
-- _Session 4_: Docker Machine, and Docker Commandline.
+- _Session 3_: Docker introduction. We will now begin to look at a newer technology that has emerged within the last few years, Docker.  In this session,
+we will go over the basic concepts of the Docker system, and get to know its
+similarities and differences with Virtualization.  We will then learn about the docker ecosystem on registry.docker.hub. We will then install the
+software we will be using in the class.
+- _Session 4_: Docker Machine, and Docker Commandline.  In this part we will
+create our first Docker Machine, and then work with the docker commandline to
+run some of the official images hosted by the Docker Hub.  In doing so, we will learn about the following important concepts:
+  - a visceral feeling for how docker is different from virtualization
+  - The different kinds of Docker image
+  - docker ENV
+  - pulling images vs running images
+  - The intimate relationship between the docker commandline and the hub
+  - Running containers from images
+  - mounting locally hosted directories as docker volumes
+  - running containers as a different user than root
+  - exposing ports
+  - managing machines, images, and containers
+  - when the docker-machine is not so transparent
 
 Requirements
 ------------
 
 * [vagrant](https://www.vagrantup.com/downloads.html)
-* [docker](https://docs.docker.com/installation/)
+* [docker](https://docs.docker.com/machine/#installation)
