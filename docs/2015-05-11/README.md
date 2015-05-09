@@ -1,5 +1,10 @@
-ARANGS15 - 2015-05-11 - Introduction, Installation, Git and Github 101 
-======================================================================
+![GTPB](http://gtpb.igc.gulbenkian.pt/bicourses/images/GTPB2015logo.png "GTPB")
+
+ARANGS15
+========
+Introduction, Installation, Git and Github 101 
+----------------------------------------------
+*2015-05-11*
 
 Computationally intensive research, such as genome assembly or other types of analyses in
 Next Generation Sequencing, ought to be reproducible so that other researchers can verify
