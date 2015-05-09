@@ -6,21 +6,18 @@ Building and composing docker containers
 ----------------------------------------
 *2015-05-13*
 
-On the previous day we learnt that docker containers are a more efficient way to specify
-an entire environment in which our pipeline can be run. The efficiency gains come from the
-fact that docker uses some of the functionality that is already present in the host, so 
-that we save on disk space and processor and RAM needs.
-
-Given that docker containers can apparently combine the functionality they provides with
-those of the host, it should perhaps be possible to layer functionality even more by 
-composing new functions from multiple containers. Today we will explore this functionality
-by looking at `docker-compose`.
+On the previous day we learnt that docker containers are a more efficient way to package applications and data.  Today we will get a better understanding of how
+to use this efficiency for our own purposes.  We will be building our own docker
+images.  We will see how Docker allows us to create an almost universally
+compatible package for each 'application' that is required in our analysis
+pipeline.
 
 We hope to accomplish the following learning goals:
 
 Docker
 ------
 
+- Docker containerized applications
 - Dockerfile syntax
 - Docker build contexts
 - `docker-compose`

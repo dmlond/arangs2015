@@ -2,12 +2,12 @@
 
 # ARANGS 2015
 
-This is the git repository for the course 
-*Automated and Reproducible Analysis of Next Generation Sequencing* 
+This is the git repository for the course
+*Automated and Reproducible Analysis of Next Generation Sequencing*
 ([ARANGS 2015](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS15),
-[timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS15/timetable.html)). 
+[timetable](http://gtpb.igc.gulbenkian.pt/bicourses/ARANGS15/timetable.html)).
 
-This repository contains source code, data, configuration files, documentation and 
+This repository contains source code, data, configuration files, documentation and
 reference materials.
 
 ## Reference materials
@@ -54,3 +54,7 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 * fastqc http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 ## Docker, docker-machine, docker-compose
+
+* docker https://www.docker.com/
+* docker-machine https://docs.docker.com/machine/
+* docker-compose https://docs.docker.com/compose/
