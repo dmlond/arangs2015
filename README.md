@@ -3,20 +3,6 @@
 Automated and Reproducible Analysis of Next Generation Sequencing Source code, data, 
 documentation and reference materials.
 
-## Data
-
-The data for the course comes from the [Genome Epidemiology Network](http://www.malariagen.net/data)
-
-It can be pulled from the Short Read Archive
-
-Consult the following for more information:
-* http://sra.dnanexus.com/runs/ERR022523
-* http://sra.dnanexus.com/runs/ERR022523/studies
-
-The ftp URLs to the actual files added to the data container are:
-* ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022523/ERR022523_1.fastq.gz
-* ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022523/ERR022523_2.fastq.gz
-
 ## Reference materials
 
 * DNA Sequencing Technologies
