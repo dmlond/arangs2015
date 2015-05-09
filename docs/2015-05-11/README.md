@@ -24,27 +24,41 @@ Many different providers host `git` repositories. The most popular one, which ha
 features for collaboration, is Github. Today we will dive into `git` and Github, to 
 accomplish the following learning goals:
 
-Github
-------
-
-- The open source culture, and licensing
-- Class Github repositories
+- The open source culture and github
+- Course Github repositories
 - Forking our repositories to make your own copy
 - Using forks as a proxy for 'citations' of code
 - Following our repositories
 - Pulling changes from our repositories
 - Submitting Pull Requests (sharing back)
-
-Git
----
-
 - Cloning repositories
 - Local and remote repositories
 - .gitignore and secrets
 - The Git Workflow
+
+Schedule
+--------
+
+The outline for today is as follows:
+
+- _Session 1_: Introductions. Expectation management: what do we expect from the course,
+what could be added/changed/removed, are we all technically ready for this? All create
+accounts on Github.com and install `git` if needed.
+- _Session 2_: A simple pipeline. We will look at a pipeline in shell script that maps
+short reads against a reference genome. If we are comfortable with Linux shell commands
+we should be able to understand what the pipeline does. All fork and clone the course 
+repository and try to run the pipeline. Install the tools and data that the pipeline 
+requires as needed.
+- _Session 3_: First run of the pipeline. If all tools were installed correctly and the
+data are there we should be able to run the pipeline. If there are any bugs in the 
+pipeline whose fix the whole class benefits from, commit your corrections to your 
+repository and submit a pull request.
+- _Session 4_: Complete running the pipeline. Address any questions and confusions that
+arose during the previous sessions.
 
 Requirements
 ------------
 
 - A [github](http://github.com) account
 - [git](http://git-scm.com/downloads)
+- any tools and data needed by the pipeline
