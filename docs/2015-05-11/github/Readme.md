@@ -41,5 +41,6 @@ Lesson Plan:
 
 Resources
 ---------
+- https://guides.github.com/
 - https://guides.github.com/activities/hello-world/
 - https://help.github.com/articles/good-resources-for-learning-git-and-github/
