@@ -60,11 +60,10 @@ software we will be using in the class.
 create our first Docker Machine, and then work with the docker commandline to
 run some of the official images hosted by the Docker Hub.  In doing so, we will learn about the following important concepts:
   - a visceral feeling for how docker is different from virtualization
+  - The Docker lexicon: image and container
   - The different kinds of Docker image
   - docker ENV
-  - pulling images vs running images
   - The intimate relationship between the docker commandline and the hub
-  - Running containers from images
   - mounting locally hosted directories as docker volumes
   - running containers as a different user than root
   - exposing ports
