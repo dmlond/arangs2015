@@ -5,8 +5,8 @@ Github
 
 Github is a publicly accessible location to store git repositories. The
 philosophy of Github is to promote OpenSource software distribution.
-  * Any user can create a free account
-  * Free accounts allow an unlimited number of public repositories,
+  * Any user can create a free account.
+  * Free accounts allow an unlimited number of public repositories (preferably with recognized [Open Source Licenses](http://opensource.org/licenses),
     with an unlimited number of external collaborators
   * See [Github Pricing](https://github.com/pricing)
   * Users can pay to house private repositories with controlled access
