@@ -42,16 +42,21 @@ Schedule
 The outline for today is as follows:
 
 - _Session 1_: Introductions. Expectation management: what do we expect from the course,
-what could be added/changed/removed, are we all technically ready for this? All create
-accounts on Github.com and install `git` if needed.
-- _Session 2_: A simple pipeline. We will look at a pipeline in shell script that maps
-short reads against a reference genome. If we are comfortable with Linux shell commands
-we should be able to understand what the pipeline does. All fork and clone the course 
-repository and install the tools and data that the pipeline requires (as needed).
+what could be added/changed/removed, are we all technically ready for this? We will 
+explore the [course repository](https://github.com/dmlond/arangs2015) on the web and 
+explain how it works. All create accounts on Github.com and install `git` if needed.
+- _Session 2_: A simple pipeline. We will look at a 
+[pipeline](https://github.com/dmlond/arangs2015/blob/master/bin/pipeline.sh) in shell 
+script that maps short reads against a reference genome. If we are comfortable with Linux 
+shell commands we should be able to understand what the pipeline does. All fork and clone 
+the course repository and compile and install the tools and data that the pipeline 
+requires (as needed, consult the download scripts in the 
+[bin](https://github.com/dmlond/arangs2015/tree/master/bin) folder).
 - _Session 3_: First run of the pipeline. If all tools were installed correctly and the
 data are there we should be able to run the pipeline. If there are any bugs in the 
 pipeline whose fix the whole class benefits from, commit your corrections to your 
-repository and submit a pull request.
+repository and submit a pull request. To view the produced alignments you can use (for
+example) [igv](http://www.broadinstitute.org/igv/).
 - _Session 4_: Complete running the pipeline. Address any questions and confusions that
 arose during the previous sessions.
 
