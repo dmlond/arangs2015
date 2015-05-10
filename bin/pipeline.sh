@@ -2,7 +2,7 @@
 
 # this is a simple pipeline that maps FASTQ reads to a reference genome (in FASTA format).
 
-# Here we define where our data resides. Perhaps we may need to modify this depending on
+# Here we define where our data reside. Perhaps we may need to modify this depending on
 # how we run the pipeline.
 DATA=../data
 
@@ -22,12 +22,12 @@ FASTQS="$READS_1 $READS_2"
 if [ ! -e $REFERENCE.bwt ]; then
 	echo "going to index $REFERENCE"
 
-	# Warning: "-a bwtsw" does not work for short genomes, 
-	# while "-a is" and "-a div" do not work not for long 
-	# genomes. Please choose "-a" according to the length 
+	# Warning: "-a bwtsw" does not work for short genomes,
+	# while "-a is" and "-a div" do not work not for long
+	# genomes. Please choose "-a" according to the length
 	# of the genome.
 	bwa index -a bwtsw $REFERENCE
-else 
+else
 	echo "$REFERENCE already indexed"
 fi
 
@@ -42,10 +42,10 @@ for FASTQ in $FASTQS; do
 	LOCALFASTA=`echo $REFERENCE | sed -e 's/.*\///'`
 	LOCALFASTQ=`echo $FASTQ | sed -e 's/.*\///'`
 	OUTFILE=$DATA/$LOCALFASTQ-$LOCALFASTA.sai
-	
+
 	# grow the list of *.sai files
 	SAIS="$SAIS $OUTFILE"
-	
+
 	# create a name for the SAM file
 	SAM=`echo $OUTFILE | sed -e "s/_.*/-$LOCALFASTA.sam/"`
 
