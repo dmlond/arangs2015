@@ -22,7 +22,7 @@ reproducible science computation:
   * Experimenting with ways to use 'Forks' as a proxy for code 'citation'
     counts
   * Experimenting with use of Github as a public data repository
-  * E-Lab Notebooks
+  * [E-Lab Notebooks](http://www.carlboettiger.info/lab-notebook.html)
   * Some [initiatives](https://osf.io/) have even built web platform onto
     github to wrap and extend its features to create a workflow more appropriate for large, distributed research projects
 
