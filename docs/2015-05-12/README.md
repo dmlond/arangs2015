@@ -64,8 +64,9 @@ The outline for today is as follows:
 - _Session 1_: Virtualization 101. We will start with a brief recap of day 1 and deal with 
 any outstanding issues. We will then dip our toes into using Virtualbox by installing a 
 tiny Linux distribution on it, [SliTaz](http://www.slitaz.org/en/get/), which we will 
-assign more resources (2048Mb RAM). You can safely remove and destroy this VM while you're
-playing around or when you're done. We just needed this to see how to install "by hand".
+assign more resources (e.g. 2048Mb RAM and as many processors as are available) using
+Virtualbox. You can safely remove and destroy this VM while you're playing around or when 
+you're done. We just needed this to see how to install "by hand".
 - _Session 2_: Managing virtual machines using Vagrant. After having seen how to install
 and configure a Linux distribution by hand we will now learn how to use Vagrant to manage
 this. Initialize another tiny Linux, this time with Vagrant: 
