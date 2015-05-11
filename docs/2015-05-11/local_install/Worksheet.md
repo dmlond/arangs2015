@@ -1,6 +1,6 @@
 We are going to try to run [pipeline.sh](https://github.com/dmlond/arangs2015/blob/master/bin/pipeline.sh). Have a look at the script.
 
-- How many values does the `$FASTQ`S variable hold?
+- How many values does the `$FASTQS` variable hold?
 - How many values will the `$SAIS` variable hold when running the script? Why?
 - How many times will the `$SAM` variable be assigned a value? Is it the same value? Why?
 - What's the function of the if/else statements, why would they be there?
