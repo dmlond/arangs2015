@@ -23,3 +23,4 @@ GitHub Worksheet
 * Fork our Repository
 * Check to make sure the `git` executable is available. If not, install it.
 * Create an SSH key so that you can commit and `push` changes back to your repository.
+* [Merge the changes made upstream into your local fork](https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/)
