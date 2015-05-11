@@ -1,0 +1,5 @@
+[user]
+  name = Your Full Name
+  email = your email
+[push]
+	default = simple
