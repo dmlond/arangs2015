@@ -24,12 +24,15 @@ Git also has some more advanced workflows that may or may not be useful in a sci
     - staged changes
     - the last committed changes (if present)
   It is possible to revert the untracked changes, leaving the file in its currently staged state. It is also possible to unstage the staged changes without losing the current untracked changes (this would allow you to forget about staged changes in favor of the current changes).  Finally, it is possible to revert the file and unstage its changes all the way back to its previously committed state.
+    - create a branch in your repository.  These allow you to pursue changes tothe code base in parallel with the 'master' (or other branches).  If the changes pursued end up being fruitful, git allows you to merge all changes in the branch into another branch (including the master), even if you have made
+    commits in the target branch (subject to normal git merge behavior).
 
 It is important to realize that any directory that has been initialized with git (either by git init, or git clone) is an entire git repository unto itself. You could archive the directory with tar or zip and copy it to another server, or send it to another user. These would essentially be 'clones' (like running git clone) of your repository. With this in mind, git provides workflows that only make sense when working with git repositories stored on remote systems (other servers, github, bitbucket, etc.).:
 
   - pull changes committed to the remotely stored repository into your repository. If the changes can be merged in without conflict, you will not need to add/commit them again.
   - If conflicts are found when pulling changes to a remote repository into your repository, you will have to [resolve the conflicts](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/).
   - push changes that you have committed to your repository to the remote repository
+  - attach branches (including master) to different remote git repositories. This can be useful if you are developing a fork of someone else's repository, but you want to make it easy to merge changes they make into your own on a regular basis.  You can routinely switch to the branch tracking the other project, pull in recent changes, and then decide which of the changes you want to merge into your other branch(es).
 
 The Git Scientific Workflow
 ---------------------------

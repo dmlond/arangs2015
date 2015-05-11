@@ -27,6 +27,8 @@ Github and make a change.
 still find the contents of the file in Github?  Do you think it is a
 good idea to store usernames and passwords in publicly available GitHub accounts?
 - See how far you can go with this by changing and staging various file combinations, then changing already staged files, then reverse staged changes, untracked changes of files with staged changes, and fully revert some of the files.
-   - Avoiding what git command will ensure that none of these changes ever
-   make it into the git log for the repository
-- What if you had committed (no pushes) a bunch of changes to your local fork of the repo, but decided that you didnt like any of it, and would like to get rid of all those commits and revert to the state of the repo as it exists in GitHub.  What would be the easiest way to do this?
+    - Avoiding what git command will ensure that none of these changes ever
+    make it into the git log for the repository, or get pushed to a remote
+    - What if you had committed (without pushes) a bunch of changes to your local fork of the repo, but decided that you didnt like any of it, and would like to get rid of all those commits and revert to the state of the repo as it exists in GitHub.  What would be the easiest way to do this?
+- Edit one of the files, but do not add the changes.  Create a branch called 'try_bowtie'.  Use git status to find out the state of the repo.  Add and commit
+your changes to the branch.  Use git to find out all the branches you have made (you might see branches pulled in when you forked the repository from someone else).  Change to the master branch.  Use git status to find out the state of the repository.  Can you find your changes?  Switch back to the 'try_bowtie' branch.  Can you find your changes now?  Switch back to the master branch.  Merge try_bowtie in to the master branch.  Use git status to find the status of the master branch. Commit and push these changes to Github.  Use the Github web interface to find out if the branch was pushed. Remove the 'try_bowtie' branch from your repository.
