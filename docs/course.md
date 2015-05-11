@@ -1,6 +1,3 @@
----
-output: pdf_document
----
 ## ARANGS 2015
 
 ### Introduction
@@ -19,12 +16,15 @@ Presentations & expectations.
     > Some [useful](https://help.github.com/articles/set-up-git/) [links](https://help.github.com/articles/generating-ssh-keys/)
     
     ```vi .gitconfig```
+    
     > Enter editing mode: type "i"
+    
     ``` 
     [user]
      name = Claire Rioualen
      email = claire.rioualen@inserm.com
     ```
+    
     > Save and quit: type "escape" to quit editing mode, then ":wq"
     
 * Setting up git:
