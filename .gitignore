@@ -1,2 +1,6 @@
 .vagrant
 packer_cache/
+*sai*
+*fasta*
+*fastq*
+*sam*
