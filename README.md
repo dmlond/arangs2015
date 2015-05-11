@@ -58,3 +58,8 @@ http://www.ee.surrey.ac.uk/Teaching/Unix/
 * docker https://www.docker.com/
 * docker-machine https://docs.docker.com/machine/
 * docker-compose https://docs.docker.com/compose/
+
+## Vagrant, virtualbox
+
+- vagrant http://vagrantup.com
+- virtualbox http://virtualbox.org
