@@ -1,2 +1,0 @@
-The final test.
-Using git in hard core mode!!!
