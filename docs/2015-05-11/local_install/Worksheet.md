@@ -1,0 +1,9 @@
+- Which programs need to be installed to run pipeline.sh?
+- Which versions of these programs do we need (consult the download* scripts)?
+- Download and (try to) compile these programs. 
+- Are there any libraries missing?
+- If there are missing libraries, try to install these with the package manager (`apt-get`)
+- Make sure the compiled programs are on the $PATH.
+- Download the data. If you use the download* scripts for this, where will the data end up?
+- Will the pipeline.sh be able to find the data there? 
+- Does it matter where you run the pipeline?
