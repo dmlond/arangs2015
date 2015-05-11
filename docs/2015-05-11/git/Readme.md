@@ -84,6 +84,7 @@ This becomes apparent when you push your repository to github.  You will notice 
 
 Resources
 ---------
+- https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
 - http://rogerdudler.github.io/git-guide/
 - http://git-scm.com/book/en/v2/Getting-Started-Git-Basics
 - http://git-scm.com/documentation/
