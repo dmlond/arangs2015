@@ -20,4 +20,10 @@ Git exists in RStudio
 git comand line:
     - git init
     - git clone
-    changes = add, rm, modify
+    - changes = add, rm, modify
+    - 3 states in which a file can be found:
+                        - untracked
+                        - stage changes
+                        - commit changes
+
+we have a remote github
