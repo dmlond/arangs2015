@@ -26,4 +26,5 @@ git comand line:
                         - stage changes
                         - commit changes
 
-we have a remote github
+we have a remote github and a local repository, and the interchangebility is done using the commands pull and push
+
