@@ -42,6 +42,13 @@ git remote -v
     Local -> Github [style=bold,label="push",lp="20"];
   }
 )
+```
+git add course.md
+git status
+git commit -m "commit message"
+git status 
+git push origin master
+```
 
 * ```git``` is built-in Rstudio
 
