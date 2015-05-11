@@ -1,2 +1,2 @@
 Another test.
-This time, it will be commited!
+This time, it will be commited, pushed, edited on github, then pulled locally.
