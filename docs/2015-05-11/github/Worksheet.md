@@ -23,4 +23,3 @@ GitHub Worksheet
 * Fork our Repository
 * Check to make sure the `git` executable is available. If not, install it.
 * Create an SSH key so that you can commit and `push` changes back to your repository.
-* Try this with a simple file (or change to a file)
