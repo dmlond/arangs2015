@@ -74,14 +74,22 @@ In the worst case: delete the whole directory and clone it again...
 * `bwa` and `samtools` should be installed (see scripts in bin/): bwa-0.7.12 & samtools-1.2 (different from apt-get versions)
    
     > SAM = Sequence Alignment/Map)
+
     > BWA = Burrows-Wheeler Aligner 
 
-* Git can ignore files if theyŕe too big to commit, needed only locally...
+* Git can ignore files if they're too big to commit, needed only locally...
 
 `vi .gitignore`
 ```
 \*sam\*
 \*fasta\*
 ...
+```
+
+* edit `$PATH` ?
+
+```
+which samtools
+which bwa
 ```
 
