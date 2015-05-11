@@ -75,3 +75,13 @@ In the worst case: delete the whole directory and clone it again...
    
     > SAM = Sequence Alignment/Map)
     > BWA = Burrows-Wheeler Aligner 
+
+* Git can ignore files if theyŕe too big to commit, needed only locally...
+
+`vi .gitignore`
+```
+\*sam\*
+\*fasta\*
+...
+```
+
