@@ -6,7 +6,7 @@ Presentations & expectations.
 
 ### Versioning: setting up git & github
 
-*** (https://github.com/rioualen/arangs2015/tree/master/docs/2015-05-11/github)
+[Instructions](https://github.com/rioualen/arangs2015/tree/master/docs/2015-05-11/github)
 
 * Forking the course files: [here](https://github.com/dmlond/arangs2015)
 * What's the difference between cloning and forking?
@@ -31,7 +31,7 @@ Presentations & expectations.
     
     > Save and quit: type "escape" to quit editing mode, then ":wq"
 
-*** (https://github.com/rioualen/arangs2015/tree/master/docs/2015-05-11/git)
+[Instructions](https://github.com/rioualen/arangs2015/tree/master/docs/2015-05-11/git)
   
 * Setting up git:
     [Link](https://help.github.com/articles/set-up-git/)
@@ -66,11 +66,12 @@ In the worst case: delete the whole directory and clone it again...
 
 ### Running a basic pipeline
 
-*** (https://github.com/rioualen/arangs2015/blob/master/data/README.md)
+[Instructions](https://github.com/rioualen/arangs2015/blob/master/data/README.md)
 
 * Pipeline can be found in bin/ 
 * Data can be fetched automatically using the scripts `download_plasmodium_raw.sh` and 
 `download_plasmodium_reference.sh` in the bin folder.
 * `bwa` and `samtools` should be installed (see scripts in bin/): bwa-0.7.12 & samtools-1.2 (different from apt-get versions)
+   
     > SAM = Sequence Alignment/Map)
     > BWA = Burrows-Wheeler Aligner 
