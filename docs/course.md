@@ -38,8 +38,8 @@ git remote -v
 ![Alt text](http://g.gravizo.com/g?
   digraph G {
     node [shape=box,style=filled,color=".7 .3 1.0"];
-    Github -> Local [style=bold,label="pull"];
-    Local -> Github [style=bold,label="push"];
+    Github -> Local [style=bold,label="pull",lp="10"];
+    Local -> Github [style=bold,label="push",lp="20"];
   }
 )
 
