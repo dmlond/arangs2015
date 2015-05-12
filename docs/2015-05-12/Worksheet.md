@@ -39,6 +39,7 @@ example of provisioning using shell commands in the Vagrantfile. Which provision
 - Install `puppet` using the following commands:
 
 ```
+    wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
     sudo dpkg -i puppetlabs-release-trusty.deb
     sudo apt-get update
     sudo apt-get -y install puppet
