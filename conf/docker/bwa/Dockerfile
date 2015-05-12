@@ -6,7 +6,7 @@ RUN apt-get update \
     && apt-get install -y bzip2 \
     && apt-get install -y tar \
     && apt-get install -y build-essential \
-    && apt-get install zlib1g-dev
+    && apt-get install -y zlib1g-dev
 ADD install_bwa.sh install_bwa.sh
 # this downloads the bwa source, makes it, moves it into place, then removes
 # the downloads in one transaction to make sure downloads do not remain
