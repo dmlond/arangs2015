@@ -1,4 +1,6 @@
-## ARANGS 2015
+# ARANGS 2015
+
+## DAY 1
 
 ### Introduction
 
@@ -86,10 +88,67 @@ In the worst case: delete the whole directory and clone it again...
 ...
 ```
 
-* edit `$PATH` ?
+* edit `$PATH`
 
-```
-which samtools
-which bwa
-```
+ `export PATH=/folder/of/executable:$PATH`
+
+A couple of important points:
+- the folders in the list are separated by `:`
+- using the bash shell (!) the list is read from left to right. In CShell (`csh`) it is read right to left.
+- in general, shells split "words" on spaces, unless the whole sentence is inside quotes. So, if any of the
+folders has spaces in it (`/Documents and Settings/`) you have to quote the list, otherwise it will stop
+at `/Documents`
+- If you want to put a word right after `$PATH`, you can delimit the variable name with curly braces: 
+`${PATH}foo`
+
+## DAY 2
+
+### Morning wrap-up
+
+* Use of XMind.
+* Commit file.
+
+### VirtualBox
+
+[Worksheet](https://github.com/rioualen/arangs2015/blob/master/docs/2015-05-12/Worksheet.md)
+
+* md5 is a way to check the integrity of an *.iso file.
+* VM set-up:
+
+    * Memory (RAM)
+    * Virtual hard drive (VDI)
+    * Disc image
+
+[graphviz]
+
+* Installing Vagrant
+
+    * Installing [tiny](https://atlas.hashicorp.com/olbat/boxes/tiny-core-micro), a Vagrant box.
+    * Just run `vagrant init`
+    * Edit `VagrantFile`
+    * Run the VM (GUI?)
+
+![Alt text](http://g.gravizo.com/g?
+  digraph G {
+    node [shape=box,style=filled,color=".7 .3 1.0"];
+    VBox -- Vagrant [style=bold,label="Vagrtantfile"];
+  }
+)
+
+* Develop own box?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
