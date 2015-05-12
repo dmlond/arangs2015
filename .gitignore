@@ -1,2 +1,6 @@
 .vagrant
 packer_cache/
+*fasta*
+*sam*
+*fastq.gz*
+*bwa-*
