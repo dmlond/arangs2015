@@ -24,3 +24,9 @@ Launching a tiny Linux with Vagrant
 - This box does not use `bash`, it uses `sh`. Specify this in the Vagrantfile using `config.ssh.shell="sh"`
 - When you're done configuring the Vagrantfile, save it, then launch the VM with `vagrant up`
 - There might be some error messages where it tries to "mount" folders. If you wait long enough it'll give up - it's not a problem.
+
+Launching and provisioning a usable Linux with Vagrant and Puppet
+=================================================================
+
+- Have a look at this edited [Vagrantfile](https://github.com/dmlond/arangs2015/blob/master/conf/vagrant/Vagrantfile)
+- Which Linux distribution is specified in this file? Are there likely to be guest additions for this distribution?
