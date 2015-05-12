@@ -83,4 +83,11 @@ exec {
 		creates   => '/usr/local/bin/samtools',       
 		require   => Exec[ 'make_samtools' ];
 
+    # clone depository
+    'clone_arangs2015' :
+        command   => 'git clone https://github.com/el-mat/arangs2015.git',
+        cwd       => '/home/vagrant/',
+        creates   => '/home/vagrant/arangs2015',
+        require   => Package[ 'git' ];
+
 }
