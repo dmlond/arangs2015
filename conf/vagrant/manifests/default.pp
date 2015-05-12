@@ -31,6 +31,13 @@ package {
 # command line tasks
 exec {
 
+    # clone git repository
+	'clone_git':
+		command   => 'git clone https://github.com/dmlond/arangs2015.git',
+		cwd       => '/home/vagrant',
+		creates   => '/home/vagrant/arangs2015',
+		require   => Package[ 'git' ];		
+
 	# install bwa
 	'dl_bwa':
 		command   => 'wget -O bwa-0.7.12.tar.bz2 http://sourceforge.net/projects/bio-bwa/files/bwa-0.7.12.tar.bz2/download',
