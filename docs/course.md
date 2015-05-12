@@ -168,16 +168,34 @@ cwd       => '/home/vagrant',
 creates   => '/home/vagrant/arangs2015',
 require   => Package[ 'git' ];
 ``` 
+* Change setting in the VM, links to data (could've re-run data download scripts instead)
+
+```
+	'chown_repo':
+		command   => 'sudo chown -R vagrant /home/vagrant/arangs2015',
+		require   => Exec[ 'clone_repo' ];
+	'rm_repo_data':
+		command   => 'rm -rf /home/vagrant/arangs2015/data',
+		require   => Exec[ 'clone_repo' ];
+	'symlink_data':
+		command   => 'ln -s /vagrant_data /home/vagrant/arangs2015/data',
+		require   => Exec[ 'rm_repo_data' ];
+```
+
 
 * Run Vagrant from `Desktop/arangs2015/conf/vagrant`
 
 ```
-vagrant up
+(vagrant up)
 vagrant provision
 vagrant ssh
 ```
 
 ### Run the pipeline from the VM
+
+* Download ref genome `*.fasta`
+* Download read files `*.fastq.gz`
+* Run `pipeline.sh`
 
 
 
