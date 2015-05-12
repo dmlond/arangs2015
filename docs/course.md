@@ -103,6 +103,8 @@ at `/Documents`
 
 ## DAY 2
 
+[Worksheet](https://github.com/rioualen/arangs2015/blob/master/docs/2015-05-12/Worksheet.md)
+
 ### Morning wrap-up
 
 * Use of XMind.
@@ -129,7 +131,8 @@ at `/Documents`
     * Run the VM: `vagrant up`
 
 ![Alt text](http://g.gravizo.com/g?
-  graph G {
+  digraph G {
+    edge [dir=none];
     node [shape=box,style=filled,color=".7 .3 1.0"];
     VBox -> Vagrant [style=bold,label="Vagrantfile"];
   }
@@ -151,7 +154,11 @@ sudo apt-get update
 sudo apt-get -y install puppet
 ```
 
-* Update arangs15/conf/manifest... file to clone the git repository:
+* Apply puppet stuff from `Desktop/arangs2015/conf/vagrant/manifests`? Purpose? Difference with `vagrant provision`?
+
+`puppet apply --noop default.pp`
+
+* Update `Desktop/arangs2015/conf/vagrant/manifests/default.pp` file to clone the git repository:
 
 ```
 # clone git repository
@@ -162,12 +169,15 @@ creates   => '/home/vagrant/arangs2015',
 require   => Package[ 'git' ];
 ``` 
 
-* Run Vagrant
+* Run Vagrant from `Desktop/arangs2015/conf/vagrant`
 
-`vagrant up
+```
+vagrant up
 vagrant provision
-vagrant ssh`
+vagrant ssh
+```
 
+### Run the pipeline from the VM
 
 
 
