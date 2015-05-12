@@ -1,2 +1,6 @@
-raw:
-  build: raw
+bwa:
+  build: conf/docker/bwa
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: bwa
