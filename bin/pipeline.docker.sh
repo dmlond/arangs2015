@@ -72,7 +72,7 @@ done
 if [ ! -e $SAM ]; then
 
 	# create paired-end SAM file
-	echo "going to run bwa sampe $FASTA $SAIS $FASTQS > $SAM"
+	echo "going to run bwa sampe $FASTA $SAIS $FASTQS -f $SAM"
 	docker-compose run bwa sampe $REFERENCE $SAIS $FASTQS -f $SAM
 else
 	echo "sam file $SAM already created"
@@ -83,7 +83,7 @@ if [ ! -e $SAM.filtered ]; then
 	# -bS   = input is SAM, output is BAM
 	# -F 4  = remove unmapped reads
 	# -q 50 = remove reads with mapping qual < 50
-	echo "going to run samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered"
+	echo "going to run samtools view -bS -F 4 -q 50 -o $SAM > $SAM.filtered"
 	docker-compose run samtools view -bS -F 4 -q 50 -o $SAM.filtered $SAM
 	docker-compose run gzip -9 $SAM
 else
