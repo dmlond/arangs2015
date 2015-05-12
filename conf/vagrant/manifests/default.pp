@@ -83,4 +83,23 @@ exec {
 		creates   => '/usr/local/bin/samtools',       
 		require   => Exec[ 'make_samtools' ];
 
+	# clone git repository
+	'clone_rep':
+		command   => 'git clone https://github.com/dmlond/arangs2015',
+		cwd       => '/home/vagrant/',
+		creates   => '/home/vagrant/arangs2015',
+		require   => Package[ 'git' ]; 
+	'change_own':
+		command   => 'sudo chown vagrant -R arangs2015',
+		cwd       => '/home/vagrant/',
+                require   => Exec[ 'clone_rep' ];
+	'change_grp':
+		command   => 'sudo chgrp vagrant -R arangs2015',
+		cwd       => '/home/vagrant',
+		require   => Exec[ 'clone_rep' ];
+	'change_perm':
+		command   => 'sudo chmod 755 -R arangs2015',
+                cwd       => '/home/vagrant',
+		require   => Exec[ 'clone_rep' ];
+
 }
