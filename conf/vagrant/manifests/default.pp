@@ -82,5 +82,22 @@ exec {
 		command   => 'ln -s /usr/local/src/samtools-1.2/samtools /usr/local/bin/samtools',
 		creates   => '/usr/local/bin/samtools',       
 		require   => Exec[ 'make_samtools' ];
+	
+	# clone the project repo
+	'clone_repo':
+		command   => 'git clone https://github.com/dmlond/arangs2015.git',
+		cwd       => '/home/vagrant',
+		creates   => '/home/vagrant/arangs2015',
+		require   => Package[ 'git' ];
+	'chown_repo':
+		command   => 'sudo chown -R vagrant /home/vagrant/arangs2015',
+		require   => Exec[ 'clone_repo' ];
+	'rm_repo_data':
+		command   => 'rm -rf /home/vagrant/arangs2015/data',
+		require   => Exec[ 'clone_repo' ];
+	'symlink_data':
+		command   => 'ln -s /vagrant_data /home/vagrant/arangs2015/data',
+		require   => Exec[ 'rm_repo_data' ];
+		
 
 }
