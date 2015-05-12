@@ -36,9 +36,11 @@ distribution?
 example of provisioning using shell commands in the Vagrantfile. Which provisioner is used in this edited Vagrantfile?
 - Install `puppet` using the following commands:
 
-    `sudo dpkg -i puppetlabs-release-trusty.deb`
-    `sudo apt-get update`
-    `sudo apt-get -y install puppet`
+```
+    sudo dpkg -i puppetlabs-release-trusty.deb
+    sudo apt-get update
+    sudo apt-get -y install puppet
+```
 
 - Now have a look at [this provisioning script](https://github.com/dmlond/arangs2015/blob/master/conf/vagrant/manifests/default.pp).
 - What would the instructions after `dl_bwa` (line 35) do?
