@@ -9,3 +9,7 @@ Launching a tiny Linux by hand on Virtualbox
 - What tools would you look for to check if you can compile from source?
 - Is git installed?
 
+Launching a tiny Linux with Vagrant
+
+- Install [vagrant](http://vagrantup.com).
+- Have a look at the available [vagrant boxes](https://atlas.hashicorp.com/boxes/search)
