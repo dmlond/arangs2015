@@ -38,7 +38,7 @@ exec {
 		creates   => '/usr/local/src/bwa-0.7.12.tar.bz2',
 		require   => Package[ 'wget' ];			
 	'unzip_bwa':
-		command   => 'bunzip2 bwa-0.7.12.tar.bz2',
+		command   => 'bunzip2 --keep bwa-0.7.12.tar.bz2',
 		cwd       => '/usr/local/src',
 		creates   => '/usr/local/src/bwa-0.7.12.tar',       
 		require   => [ Exec[ 'dl_bwa' ], Package[ 'bzip2' ] ];
@@ -64,7 +64,7 @@ exec {
 		creates   => '/usr/local/src/samtools-1.2.tar.bz2',      
 		require   => Package[ 'wget' ];
 	'unzip_samtools':
-		command   => 'bunzip2 samtools-1.2.tar.bz2',
+		command   => 'bunzip2 --keep samtools-1.2.tar.bz2',
 		cwd       => '/usr/local/src',
 		creates   => '/usr/local/src/samtools-1.2.tar',
 		require   => [ Exec[ 'dl_samtools' ], Package[ 'bzip2' ] ];
