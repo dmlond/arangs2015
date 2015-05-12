@@ -4,3 +4,15 @@ bwa:
     - ./:/wdir
   working_dir: /wdir
   entrypoint: bwa
+samtools:
+  build: conf/docker/samtools
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: samtools
+gzip:
+  build: conf/docker/samtools
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: gzip

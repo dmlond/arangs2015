@@ -22,7 +22,7 @@ READS_2=$DATA/ERR022523_2.fastq.gz
 FASTQS="$READS_1 $READS_2"
 
 # recreate BWA index if not exists
-if [ ! -e ..$REFERENCE.bwt ]; then
+if [ ! -e $REFERENCE.bwt ]; then
 	echo "going to index $REFERENCE"
 
 	# Warning: "-a bwtsw" does not work for short genomes,
@@ -77,7 +77,6 @@ if [ ! -e $SAM ]; then
 else
 	echo "sam file $SAM already created"
 fi
-exit
 
 # do samtools filter if needed
 if [ ! -e $SAM.filtered ]; then
@@ -85,8 +84,8 @@ if [ ! -e $SAM.filtered ]; then
 	# -F 4  = remove unmapped reads
 	# -q 50 = remove reads with mapping qual < 50
 	echo "going to run samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered"
-	samtools view -bS -F 4 -q 50 $SAM > $SAM.filtered
-	gzip -9 $SAM
+	docker-compose run samtools view -bS -F 4 -q 50 -o $SAM.filtered $SAM
+	docker-compose run gzip -9 $SAM
 else
 	echo "sam file $SAM.filtered already created"
 fi
@@ -96,7 +95,7 @@ if [ ! -e $SAM.sorted.bam ]; then
 
 	# sorting is needed for indexing
 	echo "going to run samtools sort $SAM.filtered $SAM.sorted"
-	samtools sort $SAM.filtered $SAM.sorted
+	docker-compose run samtools sort $SAM.filtered $SAM.sorted
 else
 	echo "sam file $SAM.sorted already created"
 fi
@@ -106,7 +105,7 @@ if [ ! -e $SAM.sorted.bam.bai ]; then
 
 	# this should result in faster processing
 	echo "going to run samtools index $SAM.sorted.bam"
-	samtools index $SAM.sorted.bam
+	docker-compose run samtools index $SAM.sorted.bam
 else
 	echo "BAM file index $SAM.sorted.bam.bai already created"
 fi
