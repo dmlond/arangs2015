@@ -2,15 +2,10 @@
 .Rhistory
 .vagrant
 packer_cache/
-<<<<<<< HEAD
+
 *bam*
 *sai*
 *fastq*
 *fasta*
-
-=======
-*sai*
-*fasta*
-*fastq*
 *sam*
->>>>>>> 48c3fe5dd05c0e8bbd2a036e2bb75e760b0354b9
+
