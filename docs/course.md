@@ -121,21 +121,52 @@ at `/Documents`
 
 [graphviz]
 
-* Installing Vagrant
+### Installing Vagrant
 
     * Installing [tiny](https://atlas.hashicorp.com/olbat/boxes/tiny-core-micro), a Vagrant box.
     * Just run `vagrant init`
     * Edit `VagrantFile`
-    * Run the VM (GUI?)
+    * Run the VM: `vagrant up`
 
 ![Alt text](http://g.gravizo.com/g?
-  digraph G {
+  graph G {
     node [shape=box,style=filled,color=".7 .3 1.0"];
-    VBox -- Vagrant [style=bold,label="Vagrtantfile"];
+    VBox -> Vagrant [style=bold,label="Vagrantfile"];
   }
 )
 
+
+
 * Develop own box?
+* Provisioning?
+
+### Adding Puppet in the loop
+    
+* Download puppet
+
+```
+wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
+sudo dpkg -i puppetlabs-release-trusty.deb
+sudo apt-get update
+sudo apt-get -y install puppet
+```
+
+* Update arangs15/conf/manifest... file to clone the git repository:
+
+```
+# clone git repository
+'clone_git':
+command   => 'git clone https://github.com/rioualen/arangs2015.git',
+cwd       => '/home/vagrant',
+creates   => '/home/vagrant/arangs2015',
+require   => Package[ 'git' ];
+``` 
+
+* Run Vagrant
+
+`vagrant up
+vagrant provision
+vagrant ssh`
 
 
 
