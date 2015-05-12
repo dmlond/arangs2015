@@ -4,6 +4,7 @@ bwa:
     - ./:/wdir
   working_dir: /wdir
   entrypoint: bwa
+  command: ''
 samtools:
   build: conf/docker/samtools
   volumes:
