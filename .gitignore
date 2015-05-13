@@ -5,4 +5,5 @@ packer_cache/
 *sai*
 *fasta*
 *fastq*
-*sam*
+.*sam*
+*samtools*
