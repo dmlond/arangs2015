@@ -1,0 +1,19 @@
+bwa:
+  build: conf/docker/bwa
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: bwa
+  command: ''
+samtools:
+  build: conf/docker/samtools
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: samtools
+gzip:
+  build: conf/docker/samtools
+  volumes:
+    - ./:/wdir
+  working_dir: /wdir
+  entrypoint: gzip
