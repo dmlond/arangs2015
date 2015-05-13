@@ -112,8 +112,6 @@ at `/Documents`
 
 ### VirtualBox
 
-[Worksheet](https://github.com/rioualen/arangs2015/blob/master/docs/2015-05-12/Worksheet.md)
-
 * md5 is a way to check the integrity of an *.iso file.
 * VM set-up:
 
@@ -154,7 +152,7 @@ sudo apt-get update
 sudo apt-get -y install puppet
 ```
 
-* Apply puppet stuff from `Desktop/arangs2015/conf/vagrant/manifests`? Purpose? Difference with `vagrant provision`?
+* Check puppet script without actually executing it.
 
 `puppet apply --noop default.pp`
 
