@@ -3,7 +3,7 @@
 * create a docker-machine called arangs2015
 * configure docker to talk to your arangs2015 docker-machine
 * pull the busybox image from the Docker registry
-* run an interactive + tty bash session inside a busybox image container
+* run an interactive + tty sh session inside a busybox image container
 **in another terminal**
 * list the docker-machines and their state
 * configure docker to talk to your arangs2015 docker-machine
@@ -16,7 +16,7 @@
 * try some other commands
 * exit
 * echo $?
-* instead of running 'bash', run ls /notthere
+* instead of running 'sh', run ls /notthere
 * echo $?
 * list out all containers
 * rm all containers
