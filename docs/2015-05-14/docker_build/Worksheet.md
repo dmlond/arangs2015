@@ -15,7 +15,7 @@ $ scp t3:your_image.tar
 * Load up your neighbors image
 * Repeat the ways you ran your image with your neighbors image.
 
-Take a look at this (Docker Build Context)[https://github.com/dmlond/arangs2015/tree/master/conf/docker/bwa].
+Take a look at this [Docker Build Context](https://github.com/dmlond/arangs2015/tree/master/conf/docker/bwa).
 
 * What files are in the context?
 * What does install_bwa.sh do?
