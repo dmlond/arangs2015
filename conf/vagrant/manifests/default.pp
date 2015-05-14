@@ -38,7 +38,7 @@ exec {
 		creates   => '/usr/local/src/bwa-0.7.12.tar.bz2',
 		require   => Package[ 'wget' ];			
 	'unzip_bwa':
-		command   => 'bunzip2 bwa-0.7.12.tar.bz2',
+		command   => 'bunzip2 --keep bwa-0.7.12.tar.bz2',
 		cwd       => '/usr/local/src',
 		creates   => '/usr/local/src/bwa-0.7.12.tar',       
 		require   => [ Exec[ 'dl_bwa' ], Package[ 'bzip2' ] ];
@@ -64,7 +64,7 @@ exec {
 		creates   => '/usr/local/src/samtools-1.2.tar.bz2',      
 		require   => Package[ 'wget' ];
 	'unzip_samtools':
-		command   => 'bunzip2 samtools-1.2.tar.bz2',
+		command   => 'bunzip2 --keep samtools-1.2.tar.bz2',
 		cwd       => '/usr/local/src',
 		creates   => '/usr/local/src/samtools-1.2.tar',
 		require   => [ Exec[ 'dl_samtools' ], Package[ 'bzip2' ] ];
@@ -82,7 +82,24 @@ exec {
 		command   => 'ln -s /usr/local/src/samtools-1.2/samtools /usr/local/bin/samtools',
 		creates   => '/usr/local/bin/samtools',       
 		require   => Exec[ 'make_samtools' ];
+	
+	# clone the project repo
+	'clone_repo':
+		command   => 'git clone https://github.com/dmlond/arangs2015.git',
+		cwd       => '/home/vagrant',
+		creates   => '/home/vagrant/arangs2015',
+		require   => Package[ 'git' ];
+	'chown_repo':
+		command   => 'sudo chown -R vagrant /home/vagrant/arangs2015',
+		require   => Exec[ 'clone_repo' ];
+	'rm_repo_data':
+		command   => 'rm -rf /home/vagrant/arangs2015/data',
+		require   => Exec[ 'clone_repo' ];
+	'symlink_data':
+		command   => 'ln -s /vagrant_data /home/vagrant/arangs2015/data',
+		require   => Exec[ 'rm_repo_data' ];
 
+<<<<<<< HEAD
     # clone git repository
 	'clone_repo':
 		command   => 'git clone https://github.com/dmlond/arangs2015.git',
@@ -100,4 +117,49 @@ exec {
 		require   => Exec[ 'rm_repo_data' ];	
 
 
+=======
+    # the pipeline itself. whether or not it is actually a good idea to 
+    # run the pipeline during provisioning is up for debate, but just to
+    # demonstrate that this is possible, here it is. Note that we are now
+    # introducing a number of variables (starting with $), that have to 
+    # be made available by 'facter'. In the current setup, the values of
+    # these variables are defined in the Vagrantfile. There are other ways
+    # to make them available as well, such as from the environment, among
+    # others.
+    'index_reference':
+        command   => "bwa index -a bwtsw ${reference}",
+        creates   => "/home/vagrant/arangs2015/data/${reference}.bwt",
+        cwd       => "/home/vagrant/arangs2015/data",
+        require   => Exec[ 'symlink_bwa', 'symlink_data' ];
+    'map_r1':
+        command   => "bwa aln -t ${cores} ${reference} ${fastq1} -f ${fastq1}.sai",
+        creates   => "/home/vagrant/arangs2015/data/${fastq1}.sai",
+        cwd       => "/home/vagrant/arangs2015/data",    
+        require   => Exec[ 'index_reference' ];
+    'map_r2':
+        command   => "bwa aln -t ${cores} ${reference} ${fastq2} -f ${fastq2}.sai",
+        creates   => "/home/vagrant/arangs2015/data/${fastq2}.sai",
+        cwd       => "/home/vagrant/arangs2015/data",    
+        require   => Exec[ 'index_reference' ];
+    'bwa_sampe':
+        command   => "bwa sampe ${reference} ${fastq1}.sai ${fastq2}.sai ${fastq1} ${fastq2} -f ${sam}",
+        creates   => "/home/vagrant/arangs2015/data/${sam}",
+        cwd       => "/home/vagrant/arangs2015/data",
+        require   => Exec[ 'map_r1', 'map_r2' ];
+	'samtools_filter':
+        command   => "samtools view -bS -F 4 -q 50 -o ${sam}.filtered ${sam}",
+        creates   => "/home/vagrant/arangs2015/data/${sam}.filtered",
+        cwd       => "/home/vagrant/arangs2015/data",
+        require   => Exec[ 'bwa_sampe', 'symlink_samtools' ];
+    'samtools_sort':
+        command   => "samtools sort ${sam}.filtered ${sam}.sorted",
+        creates   => "/home/vagrant/arangs2015/data/${sam}.sorted.bam",
+        cwd       => "/home/vagrant/arangs2015/data",
+        require   => Exec[ 'samtools_filter' ];
+    'samtools_index':
+        command   => "samtools index ${sam}.sorted.bam",
+        creates   => "/home/vagrant/arangs2015/data/${sam}.sorted.bam.bai",
+        cwd       => "/home/vagrant/arangs2015/data",
+        require   => Exec[ 'samtools_sort' ];        
+>>>>>>> d28dd1d9953632b6cd6a076bfa2d0740ed1c47b8
 }
