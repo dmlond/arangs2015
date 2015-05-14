@@ -34,7 +34,7 @@ exit
 * echo $?
 * run it again
 ```
-exit 1
+abort 'argh!'
 ```
 * echo $?
 * what did you see
