@@ -15,20 +15,20 @@ $ scp t3:your_image.tar
 * Load up your neighbors image
 * Repeat the ways you ran your image with your neighbors image.
 
-Take a look at this (Docker Build Context)[https://github.com/dmlond/arangs2015/tree/master/conf/docker/bwa].
+Take a look at this [Docker Build Context](https://github.com/dmlond/arangs2015/tree/master/conf/docker/bwa).
 
 * What files are in the context?
 * What does install_bwa.sh do?
 * How does the Dockerfile use install_bwa.sh
 * What do you think will happen if you build and run a container of this with no arguments?
 
-Take a look at this (docker-compose.yml)[https://github.com/dmlond/arangs2015/blob/master/docker-compose.yml]
+Take a look at this [docker-compose.yml](https://github.com/dmlond/arangs2015/blob/master/docker-compose.yml)
 
 * how many services are defined?
 * what do they build
 * what do you think the 'volumes' argument does?
 * see if you can build and run some of the services
 
-Take a look at (pipeline.docker.sh)[https://github.com/dmlond/arangs2015/blob/master/bin/pipeline.docker.sh]
+Take a look at [pipeline.docker.sh](https://github.com/dmlond/arangs2015/blob/master/bin/pipeline.docker.sh)
 * How does it use docker?
 * Can you run it?
