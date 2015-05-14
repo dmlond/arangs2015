@@ -49,6 +49,7 @@ build_context/
 You would add file.txt to /etc/bashrc with
 ```
 ADD file.txt /etc/bashrc
+```
 
 Files added in this way will be a permenant part of the image, and the size of the resulting image will be impacted by the size of files added to it. You can use these files in the rest of your build context, or they can be available as configuration for the application(s) that are in your images.
 
@@ -169,6 +170,6 @@ e.g. by default docker-compose stop and docker-compose rm stops or removes ALL s
 
 Resources
 ---------
-[building docker images](https://docs.docker.com/reference/commandline/cli/#build)
-[Dockerfile](https://docs.docker.com/reference/builder/)
-[docker-compose](https://docs.docker.com/compose/)
+* [building docker images](https://docs.docker.com/reference/commandline/cli/#build)
+* [Dockerfile](https://docs.docker.com/reference/builder/)
+* [docker-compose](https://docs.docker.com/compose/)
