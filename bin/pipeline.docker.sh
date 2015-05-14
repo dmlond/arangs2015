@@ -83,7 +83,7 @@ if [ ! -e $SAM.filtered ]; then
 	# -bS   = input is SAM, output is BAM
 	# -F 4  = remove unmapped reads
 	# -q 50 = remove reads with mapping qual < 50
-	echo "going to run samtools view -bS -F 4 -q 50 -o $SAM > $SAM.filtered"
+	echo "going to run samtools view -bS -F 4 -q 50 -o $SAM.filtered $SAM"
 	docker-compose run samtools view -bS -F 4 -q 50 -o $SAM.filtered $SAM
 	docker-compose run gzip -9 $SAM
 else
