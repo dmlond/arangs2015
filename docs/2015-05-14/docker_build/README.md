@@ -170,6 +170,6 @@ e.g. by default docker-compose stop and docker-compose rm stops or removes ALL s
 
 Resources
 ---------
-[building docker images](https://docs.docker.com/reference/commandline/cli/#build)
-[Dockerfile](https://docs.docker.com/reference/builder/)
-[docker-compose](https://docs.docker.com/compose/)
+* [building docker images](https://docs.docker.com/reference/commandline/cli/#build)
+* [Dockerfile](https://docs.docker.com/reference/builder/)
+* [docker-compose](https://docs.docker.com/compose/)
