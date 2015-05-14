@@ -17,11 +17,9 @@ We hope to accomplish the following learning goals:
 Docker
 ------
 
-- Docker containerized applications
-- Dockerfile syntax
 - Docker build contexts
-- `docker-compose`
-- How docker-compose can automate volume mounts to host locally stored data
+- Dockerfile syntax
+- 'docker-compose'
 - Creating a data distribution image that makes our data easily accessible
   to our application images using --volumes-from
 - Using docker logs to find out more about our running (or not) containers
