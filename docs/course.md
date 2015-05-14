@@ -144,6 +144,7 @@ at `/Documents`
 ### Adding Puppet in the loop
     
 * Download puppet
+    - NB other possible tools include **chef**
 
 ```
 wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
@@ -197,10 +198,57 @@ vagrant ssh
 
 
 
+## DAY 3
 
+[Worksheet](https://github.com/rioualen/arangs2015/blob/master/docs/2015-05-13/Worksheet.md)
 
+### Morning wrap-up
 
+* XMind.
+* Commit.
 
+### Taking a look at .json format
+
+### Editing puppet file
+
+* Move stuff from `pipeline.sh` to `default.pp` puppet file?
+
+```
+# recreate BWA index if not exists
+if [ ! -e $REFERENCE.bwt ]; then
+	echo "going to index $REFERENCE"
+
+	# Warning: "-a bwtsw" does not work for short genomes,
+	# while "-a is" and "-a div" do not work not for long
+	# genomes. Please choose "-a" according to the length
+	# of the genome.
+	bwa index -a bwtsw $REFERENCE
+else
+	echo "$REFERENCE already indexed"
+fi
+```
+
+* *What exactly goes to pipeline, to puppet to Vagrantfile, to VBox?*
+    - Data download scripts `download_plasmodium_raw.sh` and `download_plasmodium_reference.sh`
+    - Bwa and Samtools download scripts
+* Puppet is actually a pipeline itself?
+* Reduction of the pipeline to the very basic operation genome alignment? Basically, `fasta` + `fastq` = `sam`, `sai`, etc
+
+### Docker
+
+#### Docker vs virtualization
+*md table*
+Docker  Virtualization
+image   image
+host    host
+container   instance
+* Containers use up less resources & space
+* Several containers can share host resources
+* They can have their package version without conflicts
+*graphviz sch*
+* Security issues ?
+* Launch Docker image if available, else downloads them on the fly from Docker registry.
+* Image vs client vs machine ?
 
 
 
