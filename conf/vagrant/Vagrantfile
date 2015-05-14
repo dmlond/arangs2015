@@ -31,5 +31,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "puppet" do |puppet|
      puppet.manifests_path = "manifests"
      puppet.manifest_file  = "default.pp"
+
+    # This data structure is a set of key/value pairs. The key names
+    # will appear in the puppet manifest as variables (starting with
+    # $), so that we are able to parameterize our pipeline from 
+    # outside the VM.
+     puppet.facter = {
+        "sam"       => "outfile.sam",
+        "reference" => "Pf3D7_v2.1.5.fasta",
+        "cores"     => "2",
+        "fastq2"    => "ERR022523_2.fastq.gz",
+        "fastq1"    => "ERR022523_1.fastq.gz",        
+     }
   end
 end
