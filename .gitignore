@@ -11,4 +11,5 @@ packer_cache/
 *fastq*
 .*sam*
 *samtools*
+*.tar
 
