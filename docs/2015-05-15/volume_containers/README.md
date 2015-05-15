@@ -26,7 +26,7 @@ docker_build_context/
     Dockerfile
     download_data.sh
 ```
-modified docker-compose-data.yml
+modified [docker-compose-data.yml](https://github.com/dmlond/arangs2015/blob/master/docker-compose-data.yml)
 
 export COMPOSE_FILE=docker-compose-data.yml
 
