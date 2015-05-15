@@ -3,8 +3,12 @@
 .Rhistory
 .vagrant
 packer_cache/
+
+*bam*
 *sai*
+*fast*
 *fasta*
 *fastq*
 .*sam*
 *samtools*
+
