@@ -12,9 +12,9 @@ The foundation for this is that you have to share your data somewhere on the web
 publicly accessible to the world.
 In this case, we are using the plasmodium data that researchers have already made available
 
-[Reference](ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/falciparum/3D7/3D7.version2.1.5/Pf3D7_v2.1.5.fasta)
-[Pair 1 Raw](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022523/ERR022523_1.fastq.gz)
-[Pair 2 Raw](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022523/ERR022523_2.fastq.gz)
+* [Reference](ftp://ftp.sanger.ac.uk/pub/project/pathogens/Plasmodium/falciparum/3D7/3D7.version2.1.5/Pf3D7_v2.1.5.fasta)
+* [Pair 1 Raw](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022523/ERR022523_1.fastq.gz)
+* [Pair 2 Raw](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR022/ERR022523/ERR022523_2.fastq.gz)
 
 With docker, you can create a special image with a program that automates the process
 of downloading your data at runtime into a particular directory, and then making that
