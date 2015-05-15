@@ -21,11 +21,11 @@ of downloading your data at runtime into a particular directory, and then making
 directory available for other containers to use.
 
 The parts needed are:
-
+```
 docker_build_context/
     Dockerfile
     download_data.sh
-
+```
 modified docker-compose-data.yml
 
 export COMPOSE_FILE=docker-compose-data.yml
