@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#tiago Change
-
 # this is a simple pipeline that maps FASTQ reads to a reference genome (in FASTA format).
 
 # Here we define where our data reside. Perhaps we may need to modify this depending on
